@@ -1,1 +1,16 @@
-<p>by-country-page works!</p>
+<h2>By Capital</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- Searchbox-->
+        <shared-search-box (onValue)="searchByCountry($event)" placeholder="Find by capital"/>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <hr>
+        <countries-table [countries]="countries"/>
+    </div>
+</div>
